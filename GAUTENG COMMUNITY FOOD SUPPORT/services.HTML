@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Services — Gauteng Community Food Support</title>
+    <meta name="description" content="Monthly food parcels, community meals, school nutrition, food donation drives, emergency food relief, nutrition education, summer fresh produce, winter warm-uo programme, and garden & farming projects across Gauteng.">
+    <meta name="keywords" content="food parcels, meals, nutrition, donations, services, weather conditions, emergencies">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Gauteng Community Food Support</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Our Services</h1>
+    <p>We offer a range of food support programmes to help individuals and families across Gauteng through the year.</p>
+
+    <input type="text" id="searchInput" placeholder="Search our services..." style="padding: 10px; width: 300px; margin-bottom: 25px; border: 1px solid #ddd; border-radius: 4px;">
+
+    <div class="card-container" id="servicesList">
+        <div class="card">
+
+            <h3>Monthly Food Parcels</h3>
+            <img src="images/SERVICE2.jpeg" alt="monthly suppliers" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-top: 15px;">
+            <p>Registered households receive a box of non-perishables, fresh produce, and basic essentials every month.</p>
+        </div>
+        <div class="card">
+            <h3>Daily Community Meals</h3>
+            <img src="images/daily food.webp" alt=" daily meals for the community" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-top: 15px;">
+            <p>Hot, nutritious meals served Monday to Saturday at our central feeding points.</p>
+        </div>
+        <div class="card">
+            <h3>School Nutrition</h3>
+            <img src="images/school.jfif" alt="donating food to learners" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-top: 15px;">
+            <p>Breakfast and lunch support for learners in under-resourced schools.</p>
+        </div>
+        <div class="card">
+            <h3>Food Donation Drives</h3>
+            <img src="images/SERVICE1.jpeg" alt="donating food to the community" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-top: 15px;" >
+            <p>We collect surplus food from businesses and redistribute it to where it is needed most.</p>
+        </div>
+        <div class = "card">
+           <h3>Garden & Farming Projects</h3>
+           <img src="images/nutrition.jfif" alt="vegetables and fruit" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-top: 15px;">
+           <p>We teach communities how to grow their own food sustainably, creating long-term food security.</p>
+        </div>
+        <div class="card">
+            <h3>Emergency Food Relief</h3>
+            <img src="images/disaster.jfif" alt="emergency" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-top: 15px;">
+            <p>Immediate food assistance for families facing crises, disasters, or unexpected hardship.</p>
+        </div>
+        <div class="card">
+            <h3>Nutrition Education</h3>
+            <img src="images/education.webp" alt="teachig community how to stay healthy" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-top: 15px;">
+            <p>Workshops on healthy eating, meal planning and making the most of limited resources.</p>
+        </div>
+        <div class="card">
+            <h3>Summer Fresh Produce</h3>
+            <img src="images/summer.webp" alt="what is distributed in summer" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-top: 15px;">
+            <p>In summer, we distribute fresh fruits and vegetables from community gardens that are healthy, seasonal produce at its best.</p>
+        </div>
+        <div class="card">
+            <h3>Winter Warm-up Programme</h3>
+            <img src="images/soup.jfif" alt="soup Kitchens" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-top: 15px;">
+            <p>During cold winter months, we provide warm soups, hot meals, and extra energy-rich foods to help families stay healthy.</p>
+        </div>
+
+    </div>
+
+    <script>
+    var searchInput = document.getElementById('searchInput');
+    var cards = document.querySelectorAll('#servicesList .card');
+
+    searchInput.addEventListener('input', function() {
+        var searchTerm = searchInput.value.toLowerCase();
+        var i;
+        for (i = 0; i < cards.length; i++) {
+            var text = cards[i].textContent.toLowerCase();
+            if (text.indexOf(searchTerm) > -1) {
+                cards[i].style.display = '';
+            } else {
+                cards[i].style.display = 'none';
+            }
+        }
+    });
+    </script>
+</main>
+
+<footer>
+    <p>&copy; 2026 Gauteng Community Food Support. All rights reserved.</p>
+    <p>Student: Thantaswa Penxa </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+# Gauteng Community Food Support
+# WEDE5020POE Part 3
+
+User-agent: *
+Allow: /
+
+Sitemap: sitemap.xml

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home — Gauteng Community Food Support</title>
+    <meta name="description" content="Gauteng Community Food Support — ending hunger across our province. Food parcels, community meals, and nutrition programs.">
+    <meta name="keywords" content="food support, Gauteng, hunger, food parcels, community meals, charity, non-profit, South Africa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Gauteng Community Food Support</div>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <!-- my website -->
+        <h1>Welcome to Gauteng Community Food Support</h1>
+        <img src="images/index2.webp" alt="what do we do" style="width: 100%; max-width: 500px; border-radius: 8px; margin: 15px 0;">
+        <p>Feeding families, building hope, and strengthening communities across Gauteng together.</p>
+        <a href="services.html" class="btn">See How We Help</a>
+    </section>
+
+    <section>
+        <h2>Who We Are</h2>
+        <img src="images/index3.webp" alt="mwho we are" style="width: 100%; max-width: 500px; border-radius: 8px; margin: 15px 0;">
+        <p>Gauteng Community Food Support is a local non-profit organisation dedicated to ending hunger in our province. We provide nutritious food parcels, warm meals, and support to families facing food insecurity because no one in Gauteng should go hungry.</p>
+    </section>
+
+    <section class="card-container">
+        <div class="card">
+            <h3>Food Parcels</h3>
+            <p>Monthly grocery packs with essential staples delivered directly to registered households.</p>
+        </div>
+        <div class="card">
+            <h3>Community Kitchens</h3>
+            <p>Hot, balanced meals served daily at central locations across Gauteng.</p>
+        </div>
+        <div class="card">
+            <h3>Get Involved</h3>
+            <p>Volunteer your time or make a donation because every contribution makes a real difference.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="margin-top: 50px;">
+        <h2>Frequently Asked Questions</h2>
+        <img src="images/FAQs.jfif" alt="most ask questions" style="width: 100%; max-width: 500px; border-radius: 8px; margin: 15px 0;">
+        <button class="accordion">How can I receive food support?</button>
+        <div class="panel">
+            <p>Contact us directly or visit our office during office hours to register. We'll assess your needs and add you to our programme.</p>
+        </div>
+        <button class="accordion">How can I volunteer?</button>
+        <div class="panel">
+            <p>Fill in our enquiry form, select "Volunteering", and we'll send you all the details about upcoming opportunities.</p>
+        </div>
+        <button class="accordion">Can I donate food items?</button>
+        <div class="panel">
+            <p>Absolutely! Contact us to arrange drop-off or collection. We accept non-perishable foods and fresh produce.</p>
+        </div>
+        <button class="accordion">What kind of food do you provide?</button>
+        <div class="panel">
+            <p>Our food parcels include a mix of non-perishable items like rice, maize meal, canned goods, and beans, plus fresh produce such as vegetables and fruit when available. We try to ensure every parcel provides balanced nutrition.</p>
+        </div>
+        <button class="accordion">How often do I receive food support?</button>
+        <div class="panel">
+            <p>Registered households receive a food parcel once a month. Those facing extreme hardship or emergencies may qualify for additional support, so just speak to our team about your situation.</p>
+        </div>
+        <button class="accordion">Where does your funding comes from?</button>
+        <div class="panel">
+            <p>We are funded entirely by generous individuals, corporate sponsorships, and grant-making organisations. Every donation whether it is big or small it helps us keep serving our communities.</p>
+        </div>
+        <button class="accordion">Are you open on public holidays?</button>
+        <div class="panel">
+            <p>Our offices are closed on public holidays, but we do run special meal programmes duting important holidays to ensure no one goes without. Check our social media pages for updates.</p>
+        </div>
+        
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Gauteng Community Food Support. All rights reserved.</p>
+    <p>Student: Thantaswa Penxa </p>
+</footer>
+<!-- JavScript -->
+<script>
+var acc = document.querySelectorAll('.accordion');
+var i;
+for (i = 0; i<acc.length;i++) {
+    acc[i].addEventListener('click',function() {
+        this.classList.toggle('active');
+        var panel = this.nextElementSibling;
+        if (panel.style.display === 'block') {panel.style.display ='none';   
+        } else {
+            panel.style.display = 'block';
+        }
+    });
+}
+</script>
+
+
+</body>
+</html>
